@@ -24,8 +24,7 @@ var booksRouter = require("./routes/books");
 var app = express();
 
 // view engine setup
-
-app.use(express.static(path.join(__dirname, "../../build")));
+app.use(express.static(path.join(__dirname, "./build")));
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
